@@ -42,7 +42,7 @@ it("add a new box", function() {
 it("remove a box", function() {
   const boxList = render(<BoxList />);
   addBox(boxList);
-  const removeButton = boxList.getByText("Remove The Box!");
+  const removeButton = boxList.getByText("X");
   fireEvent.click(removeButton);
   expect(removeButton).not.toBeInTheDocument();
 });
